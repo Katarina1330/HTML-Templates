@@ -1,0 +1,32 @@
+/* card */
+.card {
+    margin: 100px;
+    padding: 1px 0px 1px 0px;
+    width: 450px;
+    min-height: 300px;
+
+    -webkit-box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);
+	-moz-box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);
+	box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);	   
+}
+
+.card .header .title {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.card .header .subheader {
+    color: gray;
+    font-style: italic;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.card .body {
+    font-family: arial;
+    text-align: justify;
+    text-justify: inter-word;
+}

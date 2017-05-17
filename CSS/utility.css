@@ -126,3 +126,16 @@ margin-tb-2px {
     margin: 0 auto;
     text-align: center;
 }
+
+/*background*/
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
