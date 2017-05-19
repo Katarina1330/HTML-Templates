@@ -30,3 +30,14 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Different size cards */
+.card.sm {
+    width: 250px !important;
+    min-height: 600px !important;
+}
+
+.card.lg {
+    width: 1250px !important;
+    min-height: 600px !important;
+}
