@@ -31,7 +31,7 @@
     text-justify: inter-word;
 }
 
-/* Different size cards */
+/* Different size - cards */
 .card.sm {
     width: 250px !important;
     min-height: 600px !important;
@@ -39,5 +39,36 @@
 
 .card.lg {
     width: 1250px !important;
-    min-height: 600px !important;
+    min-height: 300px !important;
 }
+
+ /* Different color - cards */
+.warm {
+    background-color: #fdefec;
+}
+
+.warm .header .subheader,
+.warm .header .title {
+    background-color: #e73827 !important;
+    color: white !important;
+}
+
+.warm .body {
+    background-color: #fcc0b5 !important;
+    color: black !important;
+}
+
+ .cold {
+     background-color: #e4f0fc;
+ }
+
+ .cold .header .title,
+ .cold .header .subheader {
+    background-color: #207ce5 !important;
+    color: white !important;
+ }
+
+ .cold .body {
+     background-color: #a4c9f4 !important;
+     color: black !important;
+ }
