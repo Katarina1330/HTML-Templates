@@ -77,8 +77,8 @@
 	    background-color: #f5f5f5;
 	}
 	
-	.grey .header .title,
-	.grey .header .subheader {
+	.grey .header .title
+	{
 	    background-color: #737373 !important;
 	    color: white !important;	    
 	}
@@ -87,3 +87,37 @@
 	    background-color: #c9c9c9 !important;
 	    color: black !important;	   
 	}
+
+    /*Animations*/
+    .expand-zoom {
+        height: 0;
+        font-size: 0;
+        transition: all .75s;
+    }
+
+    .expand-zoom.open {
+        height: 100px;
+        font-size: 100%;
+    }
+
+    .expand-slide {
+        height: 0;
+        overflow: hidden;
+        transition: all .75s;
+    }
+
+    .expand-slide.open {
+        height: 200px;
+    }
+
+    .expand-slide-color {
+       height: 0;     
+      overflow: hidden;
+      background-color: inherit;
+      transition: all 1.75s;
+    }
+
+    .expand-slide-color.open {
+        background-color: lightcoral;
+        height: 120px;
+    }
