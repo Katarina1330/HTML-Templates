@@ -1,3 +1,5 @@
+/*Media Query */
+
 @media only screen and (min-width: 400px) {
     .card-tiles {
         -moz-column-count: 1;
@@ -43,6 +45,9 @@
         width: 1260px;
     }
 }
+
+
+/*Tiles or Masonry*/
 
 .card-tiles {
     margin: 1.5em 0;

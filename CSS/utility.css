@@ -1,4 +1,5 @@
 /*padding classes*/
+
 .padding {
     padding: 4px;
 }
@@ -53,7 +54,9 @@ no-padding-b {
     padding-bottom: 0px !important;
 }
 
+
 /*margin classes*/
+
 .margin {
     margin: 4px;
 }
@@ -108,7 +111,9 @@ margin-tb-2px {
     margin-bottom: 0px !important;
 }
 
+
 /*border classes*/
+
 .border-full {
     border: gray solid 1px;
 }
@@ -119,7 +124,15 @@ margin-tb-2px {
     border-width: 0px 1px 1px 1px;
 }
 
+.border-bottom {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom: gray solid;
+}
+
+
 /*center*/
+
 .center {
     display: block;
     width: 40%;
@@ -127,7 +140,9 @@ margin-tb-2px {
     text-align: center;
 }
 
+
 /*background*/
+
 .red {
     background-color: red;
 }
