@@ -4,7 +4,7 @@
     padding: 4px;
 }
 
-.padding-2X {
+.padding-2x {
     padding: 8px;
 }
 
@@ -74,7 +74,7 @@ no-padding-b {
     margin-bottom: 4px;
 }
 
-margin-tb-2px {
+.margin-tb-2px {
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -125,9 +125,13 @@ margin-tb-2px {
 }
 
 .border-bottom {
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
     border-bottom: gray solid;
+}
+
+.border-bottom-tiny {
+    border-style: solid;
+    border-color: gray;
+    border-width: 0px 0px 1px 0px;
 }
 
 

@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="body container">
-                    <div class="row" ng-repeat="task in tasks">
+                    <div class="row {{ $last ? '' : 'border-bottom-tiny' }}" ng-class="$last" ng-repeat="task in tasks">
                         <div class="col-sm-4 padding-3x">
                             {{task.id}}
                         </div>
