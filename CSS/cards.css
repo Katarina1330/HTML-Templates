@@ -98,11 +98,16 @@
     height: 0;
     font-size: 0;
     transition: all .75s;
+    border-width: 0px 1px 0px 1px;
 }
 
 .expand-zoom.open {
     height: 100px;
     font-size: 100%;
+    padding: 12px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: gray;
 }
 
 .expand-slide {
