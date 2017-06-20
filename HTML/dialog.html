@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Dialog</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/dialog.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/utility.css">
+
+</head>
+
+<body>
+    <div ng-app="app">
+        <div ng-controller="ctrlDialog">
+            <div class="center-dialog">
+                <input type="button" value="Show Dialog" class="btn btn-primary btn-lg" ng-click="OpenDialog()">
+            </div>
+            <div ng-if="displayDialog">
+                <div class="dialog"></div>
+                <div class="box">
+                    <div class="dialog-text padding-3x">
+                        This is an alert title <br> You can specify some description text in here.
+                    </div>
+                    <div class="padding-3x">
+                        <input class="btn btn-lg center margin-t-3x text-color" type="button" value="GOT IT!" ng-click="cancelDialog()" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

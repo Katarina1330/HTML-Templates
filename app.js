@@ -46,3 +46,16 @@ app.controller('ctrlGridView', function($scope) {
     $scope.tasks.push(task4);
     $scope.tasks.push(task5);
 })
+
+app.controller('ctrlDialog', function($scope) {
+
+    $scope.displayDialog = false;
+
+    $scope.OpenDialog = function() {
+        $scope.displayDialog = true;
+    }
+
+    $scope.cancelDialog = function() {
+        $scope.displayDialog = false;
+    }
+})

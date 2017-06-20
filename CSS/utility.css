@@ -65,7 +65,7 @@ no-padding-b {
     margin: 8px;
 }
 
-.margin-3px {
+.margin-3x {
     margin: 12px;
 }
 
@@ -74,7 +74,7 @@ no-padding-b {
     margin-bottom: 4px;
 }
 
-.margin-tb-2px {
+.margin-tb-2x {
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -89,14 +89,18 @@ no-padding-b {
     margin-right: 4px;
 }
 
-.margin-lr-2px {
+.margin-lr-2x {
     margin-left: 8px;
     margin-right: 8px;
 }
 
-.margin-lr-3px {
+.margin-lr-3x {
     margin-left: 12px;
     margin-right: 12px;
+}
+
+.margin-t-3x {
+    margin-top: 12px !important;
 }
 
 .no-margin {
