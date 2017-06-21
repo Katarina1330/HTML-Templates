@@ -48,7 +48,6 @@ app.controller('ctrlGridView', function($scope) {
 })
 
 app.controller('ctrlDialog', function($scope) {
-
     $scope.displayDialog = false;
 
     $scope.OpenDialog = function() {
@@ -61,19 +60,18 @@ app.controller('ctrlDialog', function($scope) {
 })
 
 app.controller('ctrlToast', function($scope, $timeout) {
-    $scope.displayToast = false;
+    $scope.displayToast = '';
 
     $scope.openToast = function() {
-        $scope.displayToast = true;
-
-        $timeout(cancelTimeout, 5000);
+        $scope.displayToast = $scope.displayToast === 'open' ? '' : 'open';
+        $timeout(cancelTimeout, 7000);
     }
 
     var cancelTimeout = function() {
-        $scope.displayToast = false;
+        $scope.displayToast = '';
     }
 
     $scope.cancelDialog = function() {
-        $scope.displayToast = false;
+        $scope.displayToast = '';
     }
 })
