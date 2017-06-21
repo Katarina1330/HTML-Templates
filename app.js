@@ -59,3 +59,21 @@ app.controller('ctrlDialog', function($scope) {
         $scope.displayDialog = false;
     }
 })
+
+app.controller('ctrlToast', function($scope, $timeout) {
+    $scope.displayToast = false;
+
+    $scope.openToast = function() {
+        $scope.displayToast = true;
+
+        $timeout(cancelTimeout, 5000);
+    }
+
+    var cancelTimeout = function() {
+        $scope.displayToast = false;
+    }
+
+    $scope.cancelDialog = function() {
+        $scope.displayToast = false;
+    }
+})

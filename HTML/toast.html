@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Dialog</title>
+    <title>Toast</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="../app.js"></script>
@@ -18,32 +18,27 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../CSS/dialog.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/toast.css">
     <link rel="stylesheet" type="text/css" href="../CSS/utility.css">
-
 </head>
 
 <body>
     <div ng-app="app">
-        <div ng-controller="ctrlDialog">
+        <div ng-controller="ctrlToast">
             <div class="center-dialog">
-                <input type="button" value="Show Dialog" class="btn btn-primary btn-lg" ng-click="OpenDialog()">
+                <input type="button" value="Show Toast" class="btn btn-danger btn-lg" ng-click="openToast()">
             </div>
-            <div ng-if="displayDialog">
-                <div class="dialog"></div>
-                <div class="box">
-                    <div class="dialog-text padding-3x">
-                        This is an alert title <br> You can specify some description text in here.
-                    </div>
-                    <div class="padding-3x">
-                        <input class="btn btn-primary btn-lg center margin-t-3x" type="button" value="GOT IT!" ng-click="cancelDialog()" />
+
+            <div ng-if="displayToast">
+                <div class="toast show margin-t-3x ">
+                    <div class="dialog-text padding-3x ">
+                        Toast - some text!
+                        <a class="text-style nounderline cancel" href="" ng-click="cancelDialog()"> CANCEL </a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
-
 
 </html>
