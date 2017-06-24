@@ -64,14 +64,11 @@ app.controller('ctrlToast', function($scope, $timeout) {
 
     $scope.openToast = function() {
         $scope.displayToast = $scope.displayToast === 'open' ? '' : 'open';
-        $timeout(cancelTimeout, 7000);
+        $timeout(hideToast, 7000);
     }
 
-    var cancelTimeout = function() {
+    var hideToast = function() {
         $scope.displayToast = '';
     }
 
-    $scope.cancelDialog = function() {
-        $scope.displayToast = '';
-    }
 })

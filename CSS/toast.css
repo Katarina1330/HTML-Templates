@@ -51,3 +51,7 @@ a.cancel:hover {
 .expand-slide.open {
     opacity: 1;
 }
+
+.color-text {
+    color: red;
+}
