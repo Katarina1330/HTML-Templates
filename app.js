@@ -72,3 +72,16 @@ app.controller('ctrlToast', function($scope, $timeout) {
     }
 
 })
+
+app.controller('ctrlWidgetCard', function($scope) {
+    $scope.detailsShow = null;
+    $scope.topingShow = null;
+
+    $scope.toggleDetails = function() {
+        $scope.detailsShow = $scope.detailsShow === 'open' ? '' : 'open';
+    }
+
+    $scope.toggleToping = function() {
+        $scope.topingShow = $scope.topingShow === 'open' ? '' : 'open';
+    }
+})

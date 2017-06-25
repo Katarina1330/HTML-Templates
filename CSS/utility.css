@@ -50,7 +50,7 @@
     padding-top: 0px !important;
 }
 
-no-padding-b {
+.no-padding-b {
     padding-bottom: 0px !important;
 }
 
@@ -130,6 +130,10 @@ no-padding-b {
 
 .border-bottom {
     border-bottom: gray solid;
+}
+
+.border-bottom-sm {
+    border-bottom: black;
 }
 
 .border-bottom-tiny {

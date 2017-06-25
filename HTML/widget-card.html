@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Cards</title>
+
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/widget-card.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/utility.css">
+
+</head>
+
+<body>
+    <a href="cards.html" class="padding-2x">Cards</a>
+    <a href="gridview.html" class="padding-2x">Grid View</a>
+    <a href="tiles.html" class="padding-2x">Tiles</a>
+    <a href="dialog.html" class="padding-2x">Dialog</a>
+    <a href="toast.html" class="padding-2x">Toast</a>
+
+
+    <div ng-app="app">
+
+        <div class="padding-3x"></div>
+        <div class="padding-3x"></div>
+        <div class="container-fluid">
+            <div ng-controller="ctrlWidgetCard">
+                <div class="card center warm">
+                    <div class="header margin-3x">
+
+                        <div class="subheader padding-3x">
+                            <img class="images-style" src="../picture/Caesar-salad.jpg" alt="Caesar Salad">
+
+                            <div class="title padding-3x" ng-click="toggle()">
+                                Caesar Salad
+                            </div>
+                        </div>
+
+                        <div class="subheader padding-3x no-padding-t">
+                            Salad
+                        </div>
+                    </div>
+
+                    <div class="body margin-3x">
+                        <div class="padding-3x">
+                            <div class="row" ng-click="toggleDetails()">
+                                <div class=" padding-tb no-padding-t col-sm-10"> Details</div>
+                                <div ng-hide="detailsShow"><i class="material-icons col-sm-2">keyboard_arrow_down</i></div>
+                                <div ng-show="detailsShow"><i class="material-icons col-sm-2">keyboard_arrow_up</i></div>
+                            </div>
+                            <div class="expand-slide" ng-class="detailsShow">Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                        </div>
+                    </div>
+                    <div class="body margin-3x">
+                        <div class="padding-3x" ng-click="toggleToping()">
+                            <div class="row">
+                                <div class="padding-tb no-padding-t col-sm-10">Topings</div>
+                                <div ng-hide="topingShow"><i class="material-icons col-sm-2">keyboard_arrow_down</i></div>
+                                <div ng-show="topingShow"><i class="material-icons col-sm-2">keyboard_arrow_up</i></div>
+                            </div>
+                            <ul class="expand-slide" ng-class="topingShow">
+                                <li>Ham</li>
+                                <li>Chees</li>
+                                <li>Tomatto</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer margin-3x">
+                        <div class="padding-3x">
+
+                            <div class="row">
+                                Quantity
+                                <div class="col-sm-12 col-lg-3">
+                                    <div class="form-inline">
+                                        <button class="btn btn-default btn-sm" ng-click="upSpinner(product)"><i class="material-icons settings">add</i></button>
+                                        <input type="text" class="form-control input-sm text-center" ng-model="product.Amount" placeholder="0" readonly />
+                                        <button class="btn btn-default btn-sm" ng-click="downSpinner(product)"><i class="material-icons settings">remove</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padding-3x"></div>
+    <div class="padding-3x"></div>
+</body>
+
+</html>
