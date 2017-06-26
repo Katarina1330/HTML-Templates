@@ -1,15 +1,15 @@
 /* card */
 
-.card {
-    margin: 100px;
+.widget-card {
+    /*margin: 100px;*/
     padding: 1px 0px 1px 0px;
-    width: 450px;
+    /*width: 450px;*/
     -webkit-box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);
     -moz-box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);
     box-shadow: 8px 8px 31px 9px rgba(120, 120, 120, 1);
 }
 
-.card .header .title {
+.widget-card .header .title {
     font: 600 1.5em/1 'Raleway', sans-serif;
     color: rgba(0, 0, 0, .5);
     float: right;
@@ -17,14 +17,14 @@
     /*word-wrap: break-word;*/
 }
 
-.card .header .subheader {
+.widget-card .header .subheader {
     color: gray;
     font-style: italic;
     text-align: justify;
     text-justify: inter-word;
 }
 
-.card .body {
+.widget-card .body {
     font-family: arial;
     text-align: justify;
     text-justify: inter-word;
@@ -33,12 +33,12 @@
 
 /* Different size - cards */
 
-.card.sm {
+.widget-card.sm {
     width: 250px !important;
     min-height: 600px !important;
 }
 
-.card.lg {
+.widget-card.lg {
     width: 1250px !important;
     min-height: 300px !important;
 }
@@ -141,4 +141,8 @@ ul.expand-slide {
 .images-style {
     width: 200px;
     height: 100px;
+}
+
+.text-style {
+    text-transform: uppercase;
 }

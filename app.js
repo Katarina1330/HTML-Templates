@@ -70,7 +70,6 @@ app.controller('ctrlToast', function($scope, $timeout) {
     var hideToast = function() {
         $scope.displayToast = '';
     }
-
 })
 
 app.controller('ctrlWidgetCard', function($scope) {
