@@ -75,6 +75,8 @@ app.controller('ctrlToast', function($scope, $timeout) {
 app.controller('ctrlWidgetCard', function($scope) {
     $scope.detailsShow = null;
     $scope.topingShow = null;
+    $scope.addSubtractNumber = 0;
+
 
     $scope.toggleDetails = function() {
         $scope.detailsShow = $scope.detailsShow === 'open' ? '' : 'open';
@@ -82,5 +84,17 @@ app.controller('ctrlWidgetCard', function($scope) {
 
     $scope.toggleToping = function() {
         $scope.topingShow = $scope.topingShow === 'open' ? '' : 'open';
+    }
+
+    $scope.upSpinner = function() {
+        if ($scope.addSubtractNumber < 10) {
+            $scope.addSubtractNumber += 1;
+        }
+    }
+
+    $scope.downSpinner = function() {
+        if ($scope.addSubtractNumber > 0) {
+            $scope.addSubtractNumber -= 1;
+        }
     }
 })

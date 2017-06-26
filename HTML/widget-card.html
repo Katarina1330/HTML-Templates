@@ -3,15 +3,12 @@
 <html lang="en">
 
 <head>
-    <title>Cards</title>
+    <title>Widget-Card</title>
 
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="../app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -27,10 +24,11 @@
 
 <body>
     <a href="cards.html" class="padding-2x">Cards</a>
+    <a href="dialog.html" class="padding-2x">Dialog</a>
     <a href="gridview.html" class="padding-2x">Grid View</a>
     <a href="tiles.html" class="padding-2x">Tiles</a>
-    <a href="dialog.html" class="padding-2x">Dialog</a>
     <a href="toast.html" class="padding-2x">Toast</a>
+    <a href="widget-card.html" class="padding-2x">Widget Card</a>
 
 
     <div ng-app="app">
@@ -81,9 +79,9 @@
                                 Quantity
                                 <div class="col-sm-12 col-lg-3">
                                     <div class="form-inline">
-                                        <button class="btn btn-default btn-sm" ng-click="upSpinner(product)"><i class="material-icons settings">add</i></button>
-                                        <input type="text" class="form-control input-sm text-center" ng-model="product.Amount" placeholder="0" readonly />
-                                        <button class="btn btn-default btn-sm" ng-click="downSpinner(product)"><i class="material-icons settings">remove</i></button>
+                                        <button class="btn btn-default btn-sm" ng-click="upSpinner()"><i class="material-icons settings">add</i></button>
+                                        <input type="text" class="form-control input-sm text-center" ng-model="addSubtractNumber" placeholder="0" readonly />
+                                        <button class="btn btn-default btn-sm" ng-click="downSpinner()"><i class="material-icons settings">remove</i></button>
                                     </div>
                                 </div>
                             </div>
