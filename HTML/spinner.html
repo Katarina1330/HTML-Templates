@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-    <title>Toast</title>
+    <title>Spinner</title>
 
+    <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="../app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +16,10 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../CSS/toast.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/spinner.css">
     <link rel="stylesheet" type="text/css" href="../CSS/utility.css">
+
 </head>
 
 <body>
@@ -29,22 +32,21 @@
     <a href="spinner.html" class="padding-2x">Spinner</a>
 
 
-    <div ng-app="app">
-        <div ng-controller="ctrlToast">
-            <div class="center-showToast">
-                <input type="button" value="Show Toast" class="btn btn-danger btn-lg" ng-click="toggle(); openToast()">
-            </div>
 
-            <div class="expand-slide" ng-class="displayToast">
-                <div class="toast margin-t-3x ">
-                    <div class="padding-3x ">
-                        <span class="color-text padding-lr-3x">ERROR </span> Toast - some text!
-                        <!--<a class="text-style nounderline cancel" href="" ng-click="hideToast()"> CANCEL </a>-->
-                    </div>
+    <div ng-app="app">
+        <div ng-controller="ctrlSpinner">
+            <div class="center-text text-style"> Spinner </div>
+            <div class="center-spinner ">
+                <div class="form-inline">
+                    <button class="btn btn-info btn-lg" ng-click="upSpinner()"><i class="material-icons settings">add</i></button>
+                    <input type="text" class="form-control input-lg text-center" ng-model="addSubtractNumber" placeholder="0" readonly />
+                    <button class="btn btn-danger btn-lg" ng-click="downSpinner()"><i class="material-icons settings">remove</i></button>
                 </div>
             </div>
+
         </div>
     </div>
+
 </body>
 
 </html>

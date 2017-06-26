@@ -98,3 +98,19 @@ app.controller('ctrlWidgetCard', function($scope) {
         }
     }
 })
+
+app.controller('ctrlSpinner', function($scope) {
+    $scope.addSubtractNumber = 0;
+
+    $scope.upSpinner = function() {
+        if ($scope.addSubtractNumber < 10) {
+            $scope.addSubtractNumber += 1;
+        }
+    }
+
+    $scope.downSpinner = function() {
+        if ($scope.addSubtractNumber > 0) {
+            $scope.addSubtractNumber -= 1;
+        }
+    }
+})
